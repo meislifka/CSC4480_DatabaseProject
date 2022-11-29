@@ -35,8 +35,24 @@ INSERT INTO CUSTOMER(FName, LName, OrderNo) VALUES ('Chris','Leonard','932234');
 INSERT INTO CUSTOMER(FName, LName, OrderNo) VALUES ('Benjamin','Yu','8493201');
 
 /*****   Product DATA   ***********************************************************/
-INSERT INTO PRODUCT(ProductNo, ProdcutName, Description, Price, StocQuantity, Category) VALUES ('21234','Nintendo Switch','Hybrid video game console developed by Nintendo 4.5-9hrs battery life',299.99,24,'Electeonics');
-INSERT INTO PRODUCT(ProductNo, ProdcutName, Description, Price, StocQuantity, Category) VALUES ('39201','The Midngiht Library','Genre Fiction Softcover book',11.99,4,'Books');
+
+/*****   Product DATA   ***********************************************************/
+INSERT INTO PRODUCT(ProductNo, ProdcutName, Description, Price, StocQuantity, Category) VALUES ('21234','Nintendo Switch','Hybrid video game console developed by Nintendo 4.5-9hrs battery life',299.99,24,'Electronics');
+INSERT INTO PRODUCT(ProductNo, ProdcutName, Description, Price, StocQuantity, Category) VALUES ('39201','The Midnight Library','Genre Fiction Softcover book',11.99,4,'Books');
+INSERT INTO PRODUCT(ProductNo, ProdcutName, Description, Price, StocQuantity, Category) VALUES ('93883','IPhone 14','128GB Space Gray',999.99,9,'Electronics');
+INSERT INTO PRODUCT(ProductNo, ProdcutName, Description, Price, StocQuantity, Category) VALUES ('57923','Nike Sweatpants','Mens Size Medium Black',15.39,1,'Clothing');
+INSERT INTO PRODUCT(ProductNo, ProdcutName, Description, Price, StocQuantity, Category) VALUES ('38193','Keurig','K-Supreme® SMART With BrewID™',99.99,5,'Kitchen');
+INSERT INTO PRODUCT(ProductNo, ProdcutName, Description, Price, StocQuantity, Category) VALUES ('48291','OnCloud Sneakers SuperNova','Womens size 7',129.00,2,'Clothing');
+INSERT INTO PRODUCT(ProductNo, ProdcutName, Description, Price, StocQuantity, Category) VALUES ('69552','Fitbit Charge 5','Rose Gold',149.95,15,'Accessories');
+INSERT INTO PRODUCT(ProductNo, ProdcutName, Description, Price, StocQuantity, Category) VALUES ('84201','Hydroflask','32oz Magenta',39.95,1,'Water Bottles');
+INSERT INTO PRODUCT(ProductNo, ProdcutName, Description, Price, StocQuantity, Category) VALUES ('39230','Clue','Mystery Board game',8.95,2,'Toys and Games');
+INSERT INTO PRODUCT(ProductNo, ProdcutName, Description, Price, StocQuantity, Category) VALUES ('73924','4Oceans Bracelet','Jellyfish blue',20.00,6,'Accessories');
+INSERT INTO PRODUCT(ProductNo, ProdcutName, Description, Price, StocQuantity, Category) VALUES ('88654','Uggs Boots','womenClassic Short boot size 8',69.95,2,'Clothing');
+INSERT INTO PRODUCT(ProductNo, ProdcutName, Description, Price, StocQuantity, Category) VALUES ('73629','Sharpie','S-Gel, Gel Pens, Medium Point (0.7mm)',13.22,26,'Accessories');
+INSERT INTO PRODUCT(ProductNo, ProdcutName, Description, Price, StocQuantity, Category) VALUES ('84920','Lenovo laptop','Y545 16GB RAM 1660Ti 256SSD',12932.22,26,'Electronics');
+INSERT INTO PRODUCT(ProductNo, ProdcutName, Description, Price, StocQuantity, Category) VALUES ('94023','Lenovo laptop','Y545 16GB RAM 1660Ti 256SSD',12932.22,26,'Electronics');
+INSERT INTO PRODUCT(ProductNo, ProdcutName, Description, Price, StocQuantity, Category) VALUES ('84920','Amazon Alexa','Echo Dot',22.29,2,'Electronics');
+
 
 /***** EMPLOYEE DATA ******/
 INSERT INTO EMPLOYEE(SSN, FName, LName, Position, EmployeeNo, Address, PhoneNo, Salary) VALUES ('123456789', 'Kelley', 'Ross', 'Manager', '123456', '6 Tamys Lane Andover, MA 01810', '9784826266', '30000');
