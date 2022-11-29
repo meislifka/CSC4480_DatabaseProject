@@ -38,6 +38,27 @@ INSERT INTO CUSTOMER(FName, LName, OrderNo) VALUES ('Benjamin','Yu','8493201');
 INSERT INTO PRODUCT(ProductNo, ProdcutName, Description, Price, StocQuantity, Category) VALUES ('21234','Nintendo Switch','Hybrid video game console developed by Nintendo 4.5-9hrs battery life',299.99,24,'Electeonics');
 INSERT INTO PRODUCT(ProductNo, ProdcutName, Description, Price, StocQuantity, Category) VALUES ('39201','The Midngiht Library','Genre Fiction Softcover book',11.99,4,'Books');
 
+/***** EMPLOYEE DATA ******/
+INSERT INTO EMPLOYEE(SSN, FName, LName, Position, EmployeeNo, Address, PhoneNo, Salary) VALUES ('123456789', 'Kelley', 'Ross', 'Manager', '123456', '6 Tamys Lane Andover, MA 01810', '9784826266', '30000');
+INSERT INTO EMPLOYEE(SSN, FName, LName, Position, EmployeeNo, Address, PhoneNo, Salary) VALUES ('145734890', 'Tom', 'Ross', 'Cashier', '198472', '6 Tamys Lane Andover, MA 01810', '9784852446', '15000');
+INSERT INTO EMPLOYEE(SSN, FName, LName, Position, EmployeeNo, Address, PhoneNo, Salary) VALUES ('073813990', 'Anne', 'Ferry', 'Guest Service', '985302', '808 Glenbrook Ave Bryn Mawr, PA 19010', '6108743779', '19000');
+INSERT INTO EMPLOYEE(SSN, FName, LName, Position, EmployeeNo, Address, PhoneNo, Salary) VALUES ('036295719', 'Mei', 'Slifka', 'Manager', '782661', '800 E Lancaster Ave Villanova, PA 19085', '6109876990', '30000');
+INSERT INTO EMPLOYEE(SSN, FName, LName, Position, EmployeeNo, Address, PhoneNo, Salary) VALUES ('836401895', 'Katherine', 'Flanagan', 'Custodian', '362778', '808 Glenbrook Ave Bryn Mawr, PA 19010', '8146549000', '10000');
+INSERT INTO EMPLOYEE(SSN, FName, LName, Position, EmployeeNo, Address, PhoneNo, Salary) VALUES ('1908765', 'Leah', 'Prischak', 'Guest Service', '837762', '800 E Lancaster Ave Villanova, PA 19085', '8143569228', '15000');
+INSERT INTO EMPLOYEE(SSN, FName, LName, Position, EmployeeNo, Address, PhoneNo, Salary) VALUES ('102778495', 'Shannon', 'Kauber', 'Manager', '988647', '250 County Line Road Villanova, PA 19085', '8349082901', '30000');
+INSERT INTO EMPLOYEE(SSN, FName, LName, Position, EmployeeNo, Address, PhoneNo, Salary) VALUES ('83640189', 'Chloe', 'Fields', 'Cashier', '372950', '11 Shawnee Circle Andover MA, 01810', '9784826440', '20000');
+INSERT INTO EMPLOYEE(SSN, FName, LName, Position, EmployeeNo, Address, PhoneNo, Salary) VALUES ('372048592', 'Jessica', 'Shay', 'Fulfillment', '729409', '27 Center Street Andover MA, 01810', '9784098225', '25000');
+INSERT INTO EMPLOYEE(SSN, FName, LName, Position, EmployeeNo, Address, PhoneNo, Salary) VALUES ('002749578', 'Matt', 'Schuhwerk', 'Fulfillment', '830274', '9 Old Schoolhouse Road Andover MA, 01810', '9784326590', '25000');
+INSERT INTO EMPLOYEE(SSN, FName, LName, Position, EmployeeNo, Address, PhoneNo, Salary) VALUES ('174089633', 'AJ', 'Clark', 'Shipment', '893026', '33 Hillside Road Boston, MA 01627', '9784440012', '21000');
+INSERT INTO EMPLOYEE(SSN, FName, LName, Position, EmployeeNo, Address, PhoneNo, Salary) VALUES ('937284098', 'John', 'Ross', 'Team Lead', '937289', '6 Tamys Lane Andover, MA 01810', '5088783262', '40000');
+INSERT INTO EMPLOYEE(SSN, FName, LName, Position, EmployeeNo, Address, PhoneNo, Salary) VALUES ('172934450', 'Claire', 'Broderick', 'Cashier', '839207', '818 Lancaster Ave Bryn Mawr, PA 19010', '8362780999', '15000');
+INSERT INTO EMPLOYEE(SSN, FName, LName, Position, EmployeeNo, Address, PhoneNo, Salary) VALUES ('374901230', 'Nick', 'Vermiglio', 'Shipment', '983627', '200 Lancaster Ave Bryn Mawr, PA 19010', '8394672901', '20000');
+INSERT INTO EMPLOYEE(SSN, FName, LName, Position, EmployeeNo, Address, PhoneNo, Salary) VALUES ('183940576', 'Kara', 'Ross', 'Team Lead', '937482', '6 Tamys Lane Andover, MA 01810', '7818643929', '40000');
+INSERT INTO EMPLOYEE(SSN, FName, LName, Position, EmployeeNo, Address, PhoneNo, Salary) VALUES ('164937875', 'Karoline', 'Menze', 'Bagger', '937287', '800 E Lancaster Ave Villanova, PA 19085', '8429044857', '17000');
+INSERT INTO EMPLOYEE(SSN, FName, LName, Position, EmployeeNo, Address, PhoneNo, Salary) VALUES ('145893028', 'Megan', 'Carlson', 'Fulfillment', '937485', '261 Rea Street North Andover, MA 01845', '7390879000', '20000');
+INSERT INTO EMPLOYEE(SSN, FName, LName, Position, EmployeeNo, Address, PhoneNo, Salary) VALUES ('274893087', 'Brooke', 'Carlson', 'Cashier', '937485', '261 Rea Street North Andover, MA 01845', '7382613000', '20000');
+INSERT INTO EMPLOYEE(SSN, FName, LName, Position, EmployeeNo, Address, PhoneNo, Salary) VALUES ('839401222', 'Nathan', 'Carlson', 'Shipment', '937444', '261 Rea Street North Andover, MA 01845', '8374650999', '25000');
+INSERT INTO EMPLOYEE(SSN, FName, LName, Position, EmployeeNo, Address, PhoneNo, Salary) VALUES ('273645900', 'Kelly', 'Fessler', 'Guest Service', '947888', '14 Pine Road Pittsburgh, PA 93445', '8143569021', '30000');
 
 
 
