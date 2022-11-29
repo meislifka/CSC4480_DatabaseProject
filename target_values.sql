@@ -32,7 +32,7 @@ INSERT INTO CUSTOMER(FName, LName, OrderNo, Address, RewardsID) VALUES ('Shannon
 INSERT INTO CREDITCARD VALUES ('Shannon','Kauber','102345','9467386476405687');
 INSERT INTO CUSTOMER(FName, LName, OrderNo, Address, RewardsID) VALUES ('Mei','Slifka','304235','205 David Dr Bryn Mawr,PA 19010','1284');
 INSERT INTO CREDITCARD VALUES ('Mei','Slifka','304235','8393397239330824');
-INSERT INTO CUSTOMER(FName, LName, OrderNo, Address, RewardsID) VALUES ('Caroline','Ross','402345','111 Lancaster Ave Villanova,PA 19085','1945');
+INSERT INTO CUSTOMER(FName, LName, OrderNo, Address, RewardsID) VALUES ('Caroline','Ross','402345','111 Lancaster Ave Villanova,PA 19085','1233');
 INSERT INTO CREDITCARD VALUES ('Caroline','Ross','402345','4275940990041965');
 INSERT INTO CUSTOMER(FName, LName, OrderNo) VALUES ('John','Smith','93012');
 INSERT INTO CUSTOMER(FName, LName, OrderNo, Address) VALUES ('Rachel','Westcott','302452','2031 Main Street Los Angeles, CA 90015');
