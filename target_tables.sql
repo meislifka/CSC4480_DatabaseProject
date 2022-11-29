@@ -19,3 +19,14 @@ CREATE TABLE CUSTOMER(
     CreditCardNo    Int             NULL,
     PRIMARY KEY(Fname, LName, OrderNo)
 );
+
+CREATE TABLE PRODUCTS(
+    ProductNo       Int         NOT NULL,
+    ProductName     char(50)    NOT NULL,
+    Description     varchar(200)    NULL,
+    Price           double(5, 2)    NOT NULL,
+    StockQuantity   Int             NOT NULL,
+    Category        char(50)        NOT NULL,
+    AisleLoc        char(4)         NOT NULL,
+    PRIMARY KEY(ProductNo)
+);
