@@ -6,7 +6,7 @@
 /*																				*/
 /********************************************************************************/
 
-/**** ORDER DATA ****/
+/*****   Order DATA   ***********************************************************/
 INSERT INTO ORDERS(OrderNo, ProductNo, OrderDate, Delivery_Method, OrderTotal, OrderStatus) VALUES ('102314', '21234', '08-NOV-22', 'Pick Up', '37.64', 'Complete');
 INSERT INTO ORDERS(OrderNo, ProductNo, OrderDate, Delivery_Method, OrderTotal, OrderStatus) VALUES ('102345', '39201', '16-OCT-22', 'Same Day', '7.66', 'Delivered');
 INSERT INTO ORDERS(OrderNo, ProductNo, OrderDate, Delivery_Method, OrderTotal, OrderStatus) VALUES ('304235', '93883', '28-NOV-22', 'Standard Shipping', '76.22', 'Pending');
@@ -22,15 +22,16 @@ INSERT INTO ORDERS(OrderNo, ProductNo, OrderDate, Delivery_Method, OrderTotal, O
 INSERT INTO ORDERS(OrderNo, ProductNo, OrderDate, Delivery_Method, OrderTotal, OrderStatus) VALUES('493324', '84920', '26-NOV-22', 'Standard Shipping', '86.05', 'Cancelled');
 INSERT INTO ORDERS(OrderNo, ProductNo, OrderDate, Delivery_Method, OrderTotal, OrderStatus) VALUES('38234', '94023', '28-NOV-22', 'Standard Shipping', '43.67', 'Pending');
 INSERT INTO ORDERS(OrderNo, ProductNo, OrderDate, Delivery_Method, OrderTotal, OrderStatus) VALUES('932234', '84920', '11-NOV-22', 'Pick Up', '96.78', 'Delivered');
-INSERT INTO ORDERS(OrderNo, ProductNo, OrderDate, Delivery_Method, OrderTotal, OrderStatus) VALUES('84932', '39201', '20-NOV-22', 'Standard Shipping', '56.47', 'Pending');
+INSERT INTO ORDERS(OrderNo, ProductNo, OrderDate, Delivery_Method, OrderTotal, OrderStatus) VALUES('382934', '39230', '20-NOV-22', 'Standard Shipping', '8.95', 'Pending');
+INSERT INTO ORDERS(OrderNo, ProductNo, OrderDate, Delivery_Method, OrderTotal, OrderStatus) VALUES('84932', '39201', '27-NOV-22', 'Standard Shipping', '56.47', 'Pending');
 
 /*****   CUSTOMER DATA   ***********************************************************/
 INSERT INTO CUSTOMER(FName, LName, OrderNo, Address, RewardsID) VALUES ('Caroline','Ross','102314','111 Lancaster Ave Villanova,PA 19085','1233');
 INSERT INTO CREDITCARD VALUES ('Caroline','Ross','102314','4275940990041965');
 INSERT INTO CUSTOMER(FName, LName, OrderNo, Address, RewardsID) VALUES ('Shannon','Kauber','102345','1034 Countyline Rd Villanova,PA 19085','1234');
-INSERT INTO CREDITCARD VALUES ('Shannon','Ross','102345','9467386476405687');
+INSERT INTO CREDITCARD VALUES ('Shannon','Kauber','102345','9467386476405687');
 INSERT INTO CUSTOMER(FName, LName, OrderNo, Address, RewardsID) VALUES ('Mei','Slifka','304235','205 David Dr Bryn Mawr,PA 19010','1284');
-INSERT INTO CREDITCARD VALUES ('Mei','Slifka','304235','8393397239330824 ');
+INSERT INTO CREDITCARD VALUES ('Mei','Slifka','304235','8393397239330824');
 INSERT INTO CUSTOMER(FName, LName, OrderNo, Address, RewardsID) VALUES ('Caroline','Ross','402345','111 Lancaster Ave Villanova,PA 19085','1945');
 INSERT INTO CREDITCARD VALUES ('Caroline','Ross','402345','4275940990041965');
 INSERT INTO CUSTOMER(FName, LName, OrderNo) VALUES ('John','Smith','93012');
@@ -39,37 +40,34 @@ INSERT INTO CREDITCARD VALUES ('Rachel','Westcott','302452','5326394147019667');
 INSERT INTO CUSTOMER(FName, LName, OrderNo) VALUES ('Shekinah','Yanes','493321');
 INSERT INTO CUSTOMER(FName, LName, OrderNo) VALUES ('James','Patterson','392345');
 INSERT INTO CUSTOMER(FName, LName, OrderNo, Address, RewardsID) VALUES ('Catherine','Marino','329234','3921 Mill Road Fairfield,NJ 07004','9201');
-INSERT INTO CREDITCARD VALUES ('Catherine','Marino','329234','2886633034583985 ');
-INSERT INTO CUSTOMER(FName, LName, OrderNo) VALUES ('Shekinah','Yanes','493321');
-INSERT INTO CUSTOMER(FName, LName, OrderNo) VALUES ('Katie','Lee','43204352');
-INSERT INTO CUSTOMER(FName, LName, OrderNo) VALUES ('Shekinah','Yanes','392103');
-INSERT INTO CUSTOMER(FName, LName, OrderNo) VALUES ('Shekinah','Yanes','491335');
+INSERT INTO CREDITCARD VALUES ('Catherine','Marino','329234','2886633034583985');
+INSERT INTO CUSTOMER(FName, LName, OrderNo) VALUES ('Shekinah','Yanes','493322');
+INSERT INTO CUSTOMER(FName, LName, OrderNo) VALUES ('Katie','Lee','432043');
+INSERT INTO CUSTOMER(FName, LName, OrderNo) VALUES ('Shekinah','Yanes','493323');
+INSERT INTO CUSTOMER(FName, LName, OrderNo) VALUES ('Shekinah','Yanes','493324');
 INSERT INTO CUSTOMER(FName, LName, OrderNo, Address) VALUES ('Zak','Kermitz','382934','915 Bloomfield St Hoboken, NJ 07030');
-INSERT INTO CREDITCARD VALUES ('Zak','Kermtiz','382934','0798274360330222  ');
+INSERT INTO CREDITCARD VALUES ('Zak','Kermitz','382934','0798274360330222');
 INSERT INTO CUSTOMER(FName, LName, OrderNo) VALUES ('Chris','Leonard','932234');
-INSERT INTO CUSTOMER(FName, LName, OrderNo) VALUES ('Benjamin','Yu','8493201');
+INSERT INTO CUSTOMER(FName, LName, OrderNo) VALUES ('Benjamin','Yu','84932');
 
 /*****   Product DATA   ***********************************************************/
+INSERT INTO PRODUCT(ProductNo, ProductName, Description, Price, StockQuantity, Category) VALUES ('21234','Nintendo Switch','Hybrid video game console developed by Nintendo 4.5-9hrs battery life',299.99,24,'Electronics');
+INSERT INTO PRODUCT(ProductNo, ProductName, Description, Price, StockQuantity, Category) VALUES ('39201','The Midnight Library','Genre Fiction Softcover book',11.99,4,'Books');
+INSERT INTO PRODUCT(ProductNo, ProductName, Description, Price, StockQuantity, Category) VALUES ('93883','IPhone 14','128GB Space Gray',999.99,9,'Electronics');
+INSERT INTO PRODUCT(ProductNo, ProductName, Description, Price, StockQuantity, Category) VALUES ('57923','Nike Sweatpants','Mens Size Medium Black',15.39,1,'Clothing');
+INSERT INTO PRODUCT(ProductNo, ProductName, Description, Price, StockQuantity, Category) VALUES ('38193','Keurig','K-Supreme® SMART With BrewID™',99.99,5,'Kitchen');
+INSERT INTO PRODUCT(ProductNo, ProductName, Description, Price, StockQuantity, Category) VALUES ('48291','OnCloud Sneakers SuperNova','Womens size 7',129.00,2,'Clothing');
+INSERT INTO PRODUCT(ProductNo, ProductName, Description, Price, StockQuantity, Category) VALUES ('69552','Fitbit Charge 5','Rose Gold',149.95,15,'Accessories');
+INSERT INTO PRODUCT(ProductNo, ProductName, Description, Price, StockQuantity, Category) VALUES ('84201','Hydroflask','32oz Magenta',39.95,1,'Water Bottles');
+INSERT INTO PRODUCT(ProductNo, ProductName, Description, Price, StockQuantity, Category) VALUES ('39230','Clue','Mystery Board game',8.95,2,'Toys and Games');
+INSERT INTO PRODUCT(ProductNo, ProductName, Description, Price, StockQuantity, Category) VALUES ('73924','4Oceans Bracelet','Jellyfish blue',20.00,6,'Accessories');
+INSERT INTO PRODUCT(ProductNo, ProductName, Description, Price, StockQuantity, Category) VALUES ('88654','Uggs Boots','womenClassic Short boot size 8',69.95,2,'Clothing');
+INSERT INTO PRODUCT(ProductNo, ProductName, Description, Price, StockQuantity, Category) VALUES ('73629','Sharpie','S-Gel, Gel Pens, Medium Point (0.7mm)',13.22,26,'Accessories');
+INSERT INTO PRODUCT(ProductNo, ProductName, Description, Price, StockQuantity, Category) VALUES ('84920','Lenovo laptop','Y545 16GB RAM 1660Ti 256SSD',12932.22,26,'Electronics');
+INSERT INTO PRODUCT(ProductNo, ProductName, Description, Price, StockQuantity, Category) VALUES ('94023','Microplush Bed Blanket','Twin XL',22.42,22,'Bedding');
+INSERT INTO PRODUCT(ProductNo, ProductName, Description, Price, StockQuantity, Category) VALUES ('84922','Amazon Alexa','Echo Dot',22.29,2,'Electronics');
 
-/*****   Product DATA   ***********************************************************/
-INSERT INTO PRODUCT(ProductNo, ProdcutName, Description, Price, StocQuantity, Category) VALUES ('21234','Nintendo Switch','Hybrid video game console developed by Nintendo 4.5-9hrs battery life',299.99,24,'Electronics');
-INSERT INTO PRODUCT(ProductNo, ProdcutName, Description, Price, StocQuantity, Category) VALUES ('39201','The Midnight Library','Genre Fiction Softcover book',11.99,4,'Books');
-INSERT INTO PRODUCT(ProductNo, ProdcutName, Description, Price, StocQuantity, Category) VALUES ('93883','IPhone 14','128GB Space Gray',999.99,9,'Electronics');
-INSERT INTO PRODUCT(ProductNo, ProdcutName, Description, Price, StocQuantity, Category) VALUES ('57923','Nike Sweatpants','Mens Size Medium Black',15.39,1,'Clothing');
-INSERT INTO PRODUCT(ProductNo, ProdcutName, Description, Price, StocQuantity, Category) VALUES ('38193','Keurig','K-Supreme® SMART With BrewID™',99.99,5,'Kitchen');
-INSERT INTO PRODUCT(ProductNo, ProdcutName, Description, Price, StocQuantity, Category) VALUES ('48291','OnCloud Sneakers SuperNova','Womens size 7',129.00,2,'Clothing');
-INSERT INTO PRODUCT(ProductNo, ProdcutName, Description, Price, StocQuantity, Category) VALUES ('69552','Fitbit Charge 5','Rose Gold',149.95,15,'Accessories');
-INSERT INTO PRODUCT(ProductNo, ProdcutName, Description, Price, StocQuantity, Category) VALUES ('84201','Hydroflask','32oz Magenta',39.95,1,'Water Bottles');
-INSERT INTO PRODUCT(ProductNo, ProdcutName, Description, Price, StocQuantity, Category) VALUES ('39230','Clue','Mystery Board game',8.95,2,'Toys and Games');
-INSERT INTO PRODUCT(ProductNo, ProdcutName, Description, Price, StocQuantity, Category) VALUES ('73924','4Oceans Bracelet','Jellyfish blue',20.00,6,'Accessories');
-INSERT INTO PRODUCT(ProductNo, ProdcutName, Description, Price, StocQuantity, Category) VALUES ('88654','Uggs Boots','womenClassic Short boot size 8',69.95,2,'Clothing');
-INSERT INTO PRODUCT(ProductNo, ProdcutName, Description, Price, StocQuantity, Category) VALUES ('73629','Sharpie','S-Gel, Gel Pens, Medium Point (0.7mm)',13.22,26,'Accessories');
-INSERT INTO PRODUCT(ProductNo, ProdcutName, Description, Price, StocQuantity, Category) VALUES ('84920','Lenovo laptop','Y545 16GB RAM 1660Ti 256SSD',12932.22,26,'Electronics');
-INSERT INTO PRODUCT(ProductNo, ProdcutName, Description, Price, StocQuantity, Category) VALUES ('94023','Lenovo laptop','Y545 16GB RAM 1660Ti 256SSD',12932.22,26,'Electronics');
-INSERT INTO PRODUCT(ProductNo, ProdcutName, Description, Price, StocQuantity, Category) VALUES ('84920','Amazon Alexa','Echo Dot',22.29,2,'Electronics');
-
-
-/***** EMPLOYEE DATA ******/
+/*****   Employee DATA   ***********************************************************/
 INSERT INTO EMPLOYEE(SSN, FName, LName, Position, EmployeeNo, Address, PhoneNo, Salary) VALUES ('123456789', 'Kelley', 'Ross', 'Manager', '123456', '6 Tamys Lane Andover, MA 01810', '9784826266', '30000');
 INSERT INTO EMPLOYEE(SSN, FName, LName, Position, EmployeeNo, Address, PhoneNo, Salary) VALUES ('145734890', 'Tom', 'Ross', 'Cashier', '198472', '6 Tamys Lane Andover, MA 01810', '9784852446', '15000');
 INSERT INTO EMPLOYEE(SSN, FName, LName, Position, EmployeeNo, Address, PhoneNo, Salary) VALUES ('073813990', 'Anne', 'Ferry', 'Guest Service', '985302', '808 Glenbrook Ave Bryn Mawr, PA 19010', '6108743779', '19000');
