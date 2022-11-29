@@ -67,13 +67,31 @@ INSERT INTO PRODUCT(ProductNo, ProductName, Description, Price, StockQuantity, C
 INSERT INTO PRODUCT(ProductNo, ProductName, Description, Price, StockQuantity, Category) VALUES ('94023','Microplush Bed Blanket','Twin XL',22.42,22,'Bedding');
 INSERT INTO PRODUCT(ProductNo, ProductName, Description, Price, StockQuantity, Category) VALUES ('84922','Amazon Alexa','Echo Dot',22.29,2,'Electronics');
 
+
+/*****   AISLE_LOC DATA   ***********************************************************/
+INSERT INTO AISLE_LOC(ProductNo, Aisle_Loc) VALUES ('21234','E21');
+INSERT INTO AISLE_LOC(ProductNo, Aisle_Loc) VALUES ('39201','G2');
+INSERT INTO AISLE_LOC(ProductNo, Aisle_Loc) VALUES ('93883','E25');
+INSERT INTO AISLE_LOC(ProductNo, Aisle_Loc) VALUES ('57923','M3');
+INSERT INTO AISLE_LOC(ProductNo, Aisle_Loc) VALUES ('38193','K9');
+INSERT INTO AISLE_LOC(ProductNo, Aisle_Loc) VALUES ('48291','S9');
+INSERT INTO AISLE_LOC(ProductNo, Aisle_Loc) VALUES ('69552','L3');
+INSERT INTO AISLE_LOC(ProductNo, Aisle_Loc) VALUES ('84201','K3');
+INSERT INTO AISLE_LOC(ProductNo, Aisle_Loc) VALUES ('39230','G3');
+INSERT INTO AISLE_LOC(ProductNo, Aisle_Loc) VALUES ('73924','L4');
+INSERT INTO AISLE_LOC(ProductNo, Aisle_Loc) VALUES ('88654','S8');
+INSERT INTO AISLE_LOC(ProductNo, Aisle_Loc) VALUES ('73629','G5');
+INSERT INTO AISLE_LOC(ProductNo, Aisle_Loc) VALUES ('84920','E9');
+INSERT INTO AISLE_LOC(ProductNo, Aisle_Loc) VALUES ('94023','N4');
+INSERT INTO AISLE_LOC(ProductNo, Aisle_Loc) VALUES ('84922','E6');
+
 /*****   Employee DATA   ***********************************************************/
 INSERT INTO EMPLOYEE(SSN, FName, LName, Position, EmployeeNo, Address, PhoneNo, Salary) VALUES ('123456789', 'Kelley', 'Ross', 'Manager', '123456', '6 Tamys Lane Andover, MA 01810', '9784826266', '30000');
 INSERT INTO EMPLOYEE(SSN, FName, LName, Position, EmployeeNo, Address, PhoneNo, Salary) VALUES ('145734890', 'Tom', 'Ross', 'Cashier', '198472', '6 Tamys Lane Andover, MA 01810', '9784852446', '15000');
 INSERT INTO EMPLOYEE(SSN, FName, LName, Position, EmployeeNo, Address, PhoneNo, Salary) VALUES ('073813990', 'Anne', 'Ferry', 'Guest Service', '985302', '808 Glenbrook Ave Bryn Mawr, PA 19010', '6108743779', '19000');
 INSERT INTO EMPLOYEE(SSN, FName, LName, Position, EmployeeNo, Address, PhoneNo, Salary) VALUES ('036295719', 'Mei', 'Slifka', 'Manager', '782661', '800 E Lancaster Ave Villanova, PA 19085', '6109876990', '30000');
 INSERT INTO EMPLOYEE(SSN, FName, LName, Position, EmployeeNo, Address, PhoneNo, Salary) VALUES ('836401895', 'Katherine', 'Flanagan', 'Custodian', '362778', '808 Glenbrook Ave Bryn Mawr, PA 19010', '8146549000', '10000');
-INSERT INTO EMPLOYEE(SSN, FName, LName, Position, EmployeeNo, Address, PhoneNo, Salary) VALUES ('1908765', 'Leah', 'Prischak', 'Guest Service', '837762', '800 E Lancaster Ave Villanova, PA 19085', '8143569228', '15000');
+INSERT INTO EMPLOYEE(SSN, FName, LName, Position, EmployeeNo, Address, PhoneNo, Salary) VALUES ('190876455', 'Leah', 'Prischak', 'Guest Service', '837762', '800 E Lancaster Ave Villanova, PA 19085', '8143569228', '15000');
 INSERT INTO EMPLOYEE(SSN, FName, LName, Position, EmployeeNo, Address, PhoneNo, Salary) VALUES ('102778495', 'Shannon', 'Kauber', 'Manager', '988647', '250 County Line Road Villanova, PA 19085', '8349082901', '30000');
 INSERT INTO EMPLOYEE(SSN, FName, LName, Position, EmployeeNo, Address, PhoneNo, Salary) VALUES ('83640189', 'Chloe', 'Fields', 'Cashier', '372950', '11 Shawnee Circle Andover MA, 01810', '9784826440', '20000');
 INSERT INTO EMPLOYEE(SSN, FName, LName, Position, EmployeeNo, Address, PhoneNo, Salary) VALUES ('372048592', 'Jessica', 'Shay', 'Fulfillment', '729409', '27 Center Street Andover MA, 01810', '9784098225', '25000');
@@ -89,6 +107,24 @@ INSERT INTO EMPLOYEE(SSN, FName, LName, Position, EmployeeNo, Address, PhoneNo, 
 INSERT INTO EMPLOYEE(SSN, FName, LName, Position, EmployeeNo, Address, PhoneNo, Salary) VALUES ('839401222', 'Nathan', 'Carlson', 'Shipment', '937444', '261 Rea Street North Andover, MA 01845', '8374650999', '25000');
 INSERT INTO EMPLOYEE(SSN, FName, LName, Position, EmployeeNo, Address, PhoneNo, Salary) VALUES ('273645900', 'Kelly', 'Fessler', 'Guest Service', '947888', '14 Pine Road Pittsburgh, PA 93445', '8143569021', '30000');
 
-
-
-
+/*****   PHONE_NUM DATA   ***********************************************************/
+INSERT INTO PHONE_NUM(SSN, PhoneNo) VALUES ('123456789','9784826266');
+INSERT INTO PHONE_NUM(SSN, PhoneNo) VALUES ('145734890','9784852446');
+INSERT INTO PHONE_NUM(SSN, PhoneNo) VALUES ('073813990','6108743779');
+INSERT INTO PHONE_NUM(SSN, PhoneNo) VALUES ('036295719','6109876990');
+INSERT INTO PHONE_NUM(SSN, PhoneNo) VALUES ('836401895','8146549000');
+INSERT INTO PHONE_NUM(SSN, PhoneNo) VALUES ('1908765','8143569228');
+INSERT INTO PHONE_NUM(SSN, PhoneNo) VALUES ('102778495','8349082901');
+INSERT INTO PHONE_NUM(SSN, PhoneNo) VALUES ('83640189','9784826440');
+INSERT INTO PHONE_NUM(SSN, PhoneNo) VALUES ('372048592','9784098225');
+INSERT INTO PHONE_NUM(SSN, PhoneNo) VALUES ('002749578','9784326590');
+INSERT INTO PHONE_NUM(SSN, PhoneNo) VALUES ('174089633','9784440012');
+INSERT INTO PHONE_NUM(SSN, PhoneNo) VALUES ('937284098','5088783262');
+INSERT INTO PHONE_NUM(SSN, PhoneNo) VALUES ('172934450','8362780999');
+INSERT INTO PHONE_NUM(SSN, PhoneNo) VALUES ('374901230','8394672901');
+INSERT INTO PHONE_NUM(SSN, PhoneNo) VALUES ('183940576','7818643929');
+INSERT INTO PHONE_NUM(SSN, PhoneNo) VALUES ('164937875','8429044857');
+INSERT INTO PHONE_NUM(SSN, PhoneNo) VALUES ('145893028','7390879000');
+INSERT INTO PHONE_NUM(SSN, PhoneNo) VALUES ('274893087','7382613000');
+INSERT INTO PHONE_NUM(SSN, PhoneNo) VALUES ('839401222','8374650999');
+INSERT INTO PHONE_NUM(SSN, PhoneNo) VALUES ('273645900','8143569021');
