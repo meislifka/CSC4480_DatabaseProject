@@ -72,9 +72,6 @@ CREATE TABLE CUSTOMER(
     FOREIGN KEY(OrderNo) REFERENCES ORDERS(OrderNo)
 );
 
---ALTER TABLE CUSTOMER
---ADD CONSTRAINT customer_pk PRIMARY KEY(FName, LName, OrderNo);
-
 CREATE TABLE CREDITCARD(
     FName           Char(20)    NOT NULL,
     LName           Char(30)    NOT NULL,
