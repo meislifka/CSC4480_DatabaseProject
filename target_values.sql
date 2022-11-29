@@ -6,8 +6,23 @@
 /*																				*/
 /********************************************************************************/
 
-INSERT INTO ORDERS(OrderNo,ProductNo,OrderDate,Delivery_Method,OrderTotal,OrderStatus) VALUES ('102314','21234',TO_DATE('1989-12-09','YYYY-MM-DD'),'Shipment','12.55','In Transit');
-
+/**** ORDER DATA ****/
+INSERT INTO ORDERS(OrderNo, ProductNo, OrderDate, Delivery_Method, OrderTotal, OrderStatus) VALUES ('102314', '21234', '08-NOV-22', 'Pick Up', '37.64', 'Complete');
+INSERT INTO ORDERS(OrderNo, ProductNo, OrderDate, Delivery_Method, OrderTotal, OrderStatus) VALUES ('102345', '39201', '16-OCT-22', 'Same Day', '7.66', 'Delivered');
+INSERT INTO ORDERS(OrderNo, ProductNo, OrderDate, Delivery_Method, OrderTotal, OrderStatus) VALUES ('304235', '93883', '28-NOV-22', 'Standard Shipping', '76.22', 'Pending');
+INSERT INTO ORDERS(OrderNo, ProductNo, OrderDate, Delivery_Method, OrderTotal, OrderStatus) VALUES ('402345', '57923', '22-NOV-22', 'Expedited Shipping', '25.30', 'Filled');
+INSERT INTO ORDERS(OrderNo, ProductNo, OrderDate, Delivery_Method, OrderTotal, OrderStatus) VALUES ('93012', '38193', '29-NOV-22', 'Pick Up', '43.76', 'Pending');
+INSERT INTO ORDERS(OrderNo, ProductNo, OrderDate, Delivery_Method, OrderTotal, OrderStatus) VALUES('302452', '48291', '31-OCT-22', 'Standard Shipping', '104.32', 'Delivered');
+INSERT INTO ORDERS(OrderNo, ProductNo, OrderDate, Delivery_Method, OrderTotal, OrderStatus) VALUES('493321', '69552', '27-NOV-22', 'Standard Shipping', '67.02', 'Cancelled');
+INSERT INTO ORDERS(OrderNo, ProductNo, OrderDate, Delivery_Method, OrderTotal, OrderStatus) VALUES('392345', '84201', '01-OCT-22', 'Expedited Shipping', '96.06', 'Delivered');
+INSERT INTO ORDERS(OrderNo, ProductNo, OrderDate, Delivery_Method, OrderTotal, OrderStatus) VALUES('329234', '39230', '26-SEP-22', 'Pick Up', '34.50', 'Cancelled');
+INSERT INTO ORDERS(OrderNo, ProductNo, OrderDate, Delivery_Method, OrderTotal, OrderStatus) VALUES('493322', '73924', '15-NOV-22', 'Standard Shipping', '17.06', 'Delivered');
+INSERT INTO ORDERS(OrderNo, ProductNo, OrderDate, Delivery_Method, OrderTotal, OrderStatus) VALUES('432043', '88654', '27-OCT-22', 'Expedited Shipping', '16.34', 'Delivered');
+INSERT INTO ORDERS(OrderNo, ProductNo, OrderDate, Delivery_Method, OrderTotal, OrderStatus) VALUES('493323', '73629', '19-SEP-22', 'Pick Up', '19.24', 'Complete');
+INSERT INTO ORDERS(OrderNo, ProductNo, OrderDate, Delivery_Method, OrderTotal, OrderStatus) VALUES('493324', '84920', '26-NOV-22', 'Standard Shipping', '86.05', 'Cancelled');
+INSERT INTO ORDERS(OrderNo, ProductNo, OrderDate, Delivery_Method, OrderTotal, OrderStatus) VALUES('38234', '94023', '28-NOV-22', 'Standard Shipping', '43.67', 'Pending');
+INSERT INTO ORDERS(OrderNo, ProductNo, OrderDate, Delivery_Method, OrderTotal, OrderStatus) VALUES('932234', '84920', '11-NOV-22', 'Pick Up', '96.78', 'Delivered');
+INSERT INTO ORDERS(OrderNo, ProductNo, OrderDate, Delivery_Method, OrderTotal, OrderStatus) VALUES('84932', '39201', '20-NOV-22', 'Standard Shipping', '56.47', 'Pending');
 
 /*****   CUSTOMER DATA   ***********************************************************/
 INSERT INTO CUSTOMER(FName, LName, OrderNo, Address, RewardsID) VALUES ('Caroline','Ross','102314','111 Lancaster Ave Villanova,PA 19085','1233');

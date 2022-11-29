@@ -1,4 +1,5 @@
 # CSC 4480 Final Project - Database for Target Store Location
+Caroline Ross, Mei Slifka, Shannon Kauber
 ## Project Summary
 Database that keeps track of the data for one Target store location. One location will have
 many employees. An employee should have a name, SSN, employee ID number, position, salary,
@@ -12,8 +13,7 @@ customer can make an order at the store, and the order will be documented by the
 products purchased, date of the order, the delivery method (in store, order pick up, drive up, or
 delivery), the total cost of the order, and the current status of the order.
 
-## Database Components
-#### Tables
+## Database Tables
 1. Product: Contains information about products sold at Target location
 2. Aisle Location: Multivalued attribute that contains the aisle location(s) of a product
 3. Employee: Contains personal information about employees
@@ -21,11 +21,7 @@ delivery), the total cost of the order, and the current status of the order.
 5. Orders: Contains information about orders placed at the Target location
 6. Customer: Contains information about customers placing orders at the location
 7. Credit Card: Multivalued attribute that stores customers' credit card number(s)
-#### Values
 
 ## How to Execute
 1. Run the target_tables.sql script to create the database schema
 2. Run the target_values.sql script to insert data into the database
-
-## Querying the Database
-
