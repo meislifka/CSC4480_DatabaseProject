@@ -17,7 +17,7 @@ DROP TABLE AISLE_LOC CASCADE CONSTRAINTS;
 DROP TABLE PHONE_NUM CASCADE CONSTRAINTS;
     
 CREATE TABLE PRODUCT(
-    ProductNo       Int             NOT NULL,
+    ProductNo       Char(5)         NOT NULL,
     ProductName     Char(50)        NOT NULL,
     Description     Varchar(200)    NULL,
     Price           Number(18,2)    NOT NULL,
@@ -27,7 +27,7 @@ CREATE TABLE PRODUCT(
 );
 
 CREATE TABLE AISLE_LOC(
-    ProductNo       Int             NOT NULL,
+    ProductNo       Char(5)         NOT NULL,
     Aisle_Loc       Char(4)         NOT NULL,
     PRIMARY KEY(ProductNo, Aisle_Loc),
     FOREIGN KEY(ProductNo) REFERENCES PRODUCT(ProductNo)
@@ -38,23 +38,23 @@ CREATE TABLE EMPLOYEE(
     FName           Char(20)        NOT NULL,
     LName           Char(30)        NOT NULL,
     Position        Char(30)        NOT NULL,
-    EmployeeNo      Int             NOT NULL,
+    EmployeeNo      Char(6)         NOT NULL,
     Address         Varchar(200)    NOT NULL,
-    PhoneNo         Int             NOT NULL,
+    PhoneNo         Char(10)        NOT NULL,
     Salary          Int             NOT NULL,
     PRIMARY KEY(SSN)
 );
 
 CREATE TABLE PHONE_NUM(
     SSN             Char(9)         NOT NULL,
-    PhoneNo         Int             NOT NULL,
+    PhoneNo         Char(10)        NOT NULL,
     PRIMARY KEY(SSN, PhoneNo),
     FOREIGN KEY(SSN) REFERENCES EMPLOYEE(SSN)
 );
 
 CREATE TABLE ORDERS(
-    OrderNo             Int             NOT NULL,
-    ProductNo           Int             NOT NULL,
+    OrderNo             Char(6)         NOT NULL,
+    ProductNo           Char(5)         NOT NULL,
     OrderDate           Date            NOT NULL,
     Delivery_Method     Char(50)        NOT NULL,
     OrderTotal          Number(18,2)    NOT NULL,
@@ -65,9 +65,9 @@ CREATE TABLE ORDERS(
 CREATE TABLE CUSTOMER(
     FName           Char(20)        NOT NULL,
     LName           Char(30)        NOT NULL,
-    OrderNo         Int             NOT NULL,
+    OrderNo         Char(6)         NOT NULL,
     Address         Varchar(100)    NULL,
-    RewardsID       Int             NULL,
+    RewardsID       Char(4)         NULL,
     PRIMARY KEY(FName, LName, OrderNo),
     FOREIGN KEY(OrderNo) REFERENCES ORDERS(OrderNo)
 );
@@ -75,7 +75,7 @@ CREATE TABLE CUSTOMER(
 CREATE TABLE CREDITCARD(
     FName           Char(20)    NOT NULL,
     LName           Char(30)    NOT NULL,
-    OrderNo         Int         NOT NULL,
+    OrderNo         Char(6)     NOT NULL,
     CreditCardNo    Char(16)    NOT NULL,
     PRIMARY KEY(FName, LName, OrderNo, CreditCardNo),
     FOREIGN KEY(FName, LName, OrderNo) REFERENCES CUSTOMER(FName, LName, OrderNo)

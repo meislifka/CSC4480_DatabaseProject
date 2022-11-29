@@ -21,9 +21,11 @@ delivery), the total cost of the order, and the current status of the order.
 5. Orders: Contains information about orders placed at the Target location
 6. Customer: Contains information about customers placing orders at the location
 7. Credit Card: Multivalued attribute that stores customers' credit card number(s)
-### Values
+#### Values
 
 ## How to Execute
 1. Run the target_tables.sql script to create the database schema
 2. Run the target_values.sql script to insert data into the database
+
+## Querying the Database
 
