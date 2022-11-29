@@ -11,10 +11,11 @@
 DROP TABLE CUSTOMER
 
 CREATE TABLE CUSTOMER(
-    FName       char(20)     NOT NULL,
-    LName       char(30)     NOT NULL,
-    OrderNo     Int          NOT NULL,
-    Address     varchar(100)    NULL,
-    RewardsID   Int             NULL,
+    FName           char(20)     NOT NULL,
+    LName           char(30)     NOT NULL,
+    OrderNo         Int          NOT NULL,
+    Address         varchar(100)    NULL,
+    RewardsID       Int             NULL,
+    CreditCardNo    Int             NULL,
     PRIMARY KEY(Fname, LName, OrderNo)
 );
