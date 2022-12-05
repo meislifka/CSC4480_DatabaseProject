@@ -30,7 +30,9 @@ SELECT ORDERS.OrderNo, CUSTOMER.FName, CUSTOMER.LName, ORDERS.OrderDate
 FROM ORDERS
 INNER JOIN CUSTOMER ON ORDERS.OrderNo=CUSTOMER.OrderNo;
 
-/*Credit Card Numbers of customers*/
+/*Join Credit card numbers and customer*/
 SELECT distinct CUSTOMER.FName, CUSTOMER.LName, CREDITCARD.CreditCardNo
 FROM CREDITCARD
 INNER JOIN CUSTOMER ON CREDITCARD.OrderNo=CUSTOMER.OrderNo;
+
+
