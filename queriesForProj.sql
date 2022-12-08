@@ -22,7 +22,7 @@ from Orders
 ORDER BY OrderTotal desc;
 
 /*Number of employees */
-select count(distinct EmployeeNo)
+select count(distinct EmployeeNo) as "Number of Employees"
 from EMPLOYEE;
 
 /* Join on Orders and Customer tables to connect order date to the customer*/
