@@ -46,3 +46,10 @@ SELECT e.FName, e.LName, e.Position
 from employee e
 order by e.FName, e.LName;
 
+SELECT * FROM orders, product
+WHERE ORDERS.ProductNo = PRODUCT.ProductNo;
+
+/*Check stock quantity of product*/
+SELECT p.StockQuantity, p.ProductNo
+FROM orders o, product p
+WHERE o.ProductNo = p.ProductNo;

@@ -7,6 +7,7 @@
 /********************************************************************************/
 
 /*****   Order DATA   ***********************************************************/
+
 INSERT INTO ORDERS(OrderNo, ProductNo, OrderDate, Delivery_Method, OrderTotal, OrderStatus) VALUES ('102314', '21234', '08-NOV-22', 'Pick Up', '37.64', 'Complete');
 INSERT INTO ORDERS(OrderNo, ProductNo, OrderDate, Delivery_Method, OrderTotal, OrderStatus) VALUES ('102345', '39201', '16-OCT-22', 'Same Day', '7.66', 'Delivered');
 INSERT INTO ORDERS(OrderNo, ProductNo, OrderDate, Delivery_Method, OrderTotal, OrderStatus) VALUES ('304235', '93883', '28-NOV-22', 'Standard Shipping', '76.22', 'Pending');
@@ -24,6 +25,11 @@ INSERT INTO ORDERS(OrderNo, ProductNo, OrderDate, Delivery_Method, OrderTotal, O
 INSERT INTO ORDERS(OrderNo, ProductNo, OrderDate, Delivery_Method, OrderTotal, OrderStatus) VALUES('932234', '84920', '11-NOV-22', 'Pick Up', '96.78', 'Delivered');
 INSERT INTO ORDERS(OrderNo, ProductNo, OrderDate, Delivery_Method, OrderTotal, OrderStatus) VALUES('382934', '39230', '20-NOV-22', 'Standard Shipping', '8.95', 'Pending');
 INSERT INTO ORDERS(OrderNo, ProductNo, OrderDate, Delivery_Method, OrderTotal, OrderStatus) VALUES('84932', '39201', '27-NOV-22', 'Standard Shipping', '56.47', 'Pending');
+/**** EXTRA INSERTS FOR TESTING CONSTRAINT AND TRIGGER ****/
+/*INSERT INTO ORDERS(OrderNo, ProductNo, OrderDate, Delivery_Method, OrderTotal, OrderStatus) VALUES('84934', '21234', '27-NOV-22', 'Standard Shipping', '59.47', 'Pending');
+INSERT INTO ORDERS(OrderNo, ProductNo, OrderDate, Delivery_Method, OrderTotal, OrderStatus) VALUES('84939', '21234', '28-NOV-22', 'Pick Up', '6.33', 'Pending');
+INSERT INTO ORDERS(OrderNo, ProductNo, OrderDate, Delivery_Method, OrderTotal, OrderStatus) VALUES('00823', '57923', '13-SEP-22', 'Pick Up', '6.90', 'Pending');
+INSERT INTO ORDERS(OrderNo, ProductNo, OrderDate, Delivery_Method, OrderTotal, OrderStatus) VALUES('91672', '57923', '30-AUG-22', 'Pick Up', '12.75', 'Pending');*/
 
 /*****   CUSTOMER DATA   ***********************************************************/
 INSERT INTO CUSTOMER(FName, LName, OrderNo, Address, RewardsID) VALUES ('Caroline','Ross','102314','111 Lancaster Ave Villanova,PA 19085','1233');

@@ -23,7 +23,8 @@ CREATE TABLE PRODUCT(
     Price           Number(18,2)    NOT NULL,
     StockQuantity   Int             NOT NULL,
     Category        Char(50)        NOT NULL,
-    PRIMARY KEY(ProductNo)
+    PRIMARY KEY(ProductNo),
+    CONSTRAINT InStock CHECK (StockQuantity >= 0)
 );
 
 CREATE TABLE AISLE_LOC(
@@ -80,3 +81,12 @@ CREATE TABLE CREDITCARD(
     PRIMARY KEY(FName, LName, OrderNo, CreditCardNo),
     FOREIGN KEY(FName, LName, OrderNo) REFERENCES CUSTOMER(FName, LName, OrderNo)
 );
+
+CREATE OR REPLACE TRIGGER UPDATEQUANTITY
+AFTER INSERT ON ORDERS
+FOR EACH ROW
+    BEGIN
+        UPDATE PRODUCT SET StockQuantity = StockQuantity - 1
+        WHERE ProductNo = :NEW.ProductNo;
+    END;
+    /
