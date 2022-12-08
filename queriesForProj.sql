@@ -53,3 +53,17 @@ WHERE ORDERS.ProductNo = PRODUCT.ProductNo;
 SELECT p.StockQuantity, p.ProductNo
 FROM orders o, product p
 WHERE o.ProductNo = p.ProductNo;
+
+/*Top 2 Most Expensive Orders */
+SELECT OrderNo, OrderTotal
+FROM Orders a
+WHERE 2 >= (select count(distinct OrderTotal) from Orders b where a.OrderTotal <= b.OrderTotal) order by a.OrderTotal desc;
+
+/* Orders that still need to be delivered */
+/* Ordered by Order Date */
+
+SELECT * from Orders o
+WHERE OrderStatus != 'Delivered'
+order by o.OrderDate;
+
+

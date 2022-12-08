@@ -8,7 +8,7 @@
 
 /*****   Order DATA   ***********************************************************/
 
-INSERT INTO ORDERS(OrderNo, ProductNo, OrderDate, Delivery_Method, OrderTotal, OrderStatus) VALUES ('102314', '21234', '08-NOV-22', 'Pick Up', '37.64', 'Complete');
+INSERT INTO ORDERS(OrderNo, ProductNo, OrderDate, Delivery_Method, OrderTotal, OrderStatus) VALUES ('102314', '21234', '08-NOV-22', 'Pick Up', '37.64', 'Filled');
 INSERT INTO ORDERS(OrderNo, ProductNo, OrderDate, Delivery_Method, OrderTotal, OrderStatus) VALUES ('102345', '39201', '16-OCT-22', 'Same Day', '7.66', 'Delivered');
 INSERT INTO ORDERS(OrderNo, ProductNo, OrderDate, Delivery_Method, OrderTotal, OrderStatus) VALUES ('304235', '93883', '28-NOV-22', 'Standard Shipping', '76.22', 'Pending');
 INSERT INTO ORDERS(OrderNo, ProductNo, OrderDate, Delivery_Method, OrderTotal, OrderStatus) VALUES ('402345', '57923', '22-NOV-22', 'Expedited Shipping', '25.30', 'Filled');
