@@ -35,4 +35,14 @@ SELECT distinct CUSTOMER.FName, CUSTOMER.LName, CREDITCARD.CreditCardNo
 FROM CREDITCARD
 INNER JOIN CUSTOMER ON CREDITCARD.OrderNo=CUSTOMER.OrderNo;
 
+/*Find out how many orders there*/
+SELECT count(distinct OrderNo)
+from ORDERS;
+
+/*List the First Name, Last Name, and Position of the Employees*/
+/* Sorted by First Name & Last Name for same First Name*/
+
+SELECT e.FName, e.LName, e.Position
+from employee e
+order by e.FName, e.LName;
 
