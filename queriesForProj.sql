@@ -63,7 +63,6 @@ WHERE 2 >= (select count(distinct OrderTotal) from Orders b where a.OrderTotal <
 /* Ordered by Order Date */
 
 SELECT * from Orders o
-WHERE OrderStatus != 'Delivered'
+WHERE OrderStatus = 'Pending'
 order by o.OrderDate;
-
 
