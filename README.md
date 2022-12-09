@@ -25,3 +25,4 @@ delivery), the total cost of the order, and the current status of the order.
 ## How to Execute
 1. Run the target_tables.sql script to create the database schema
 2. Run the target_values.sql script to insert data into the database
+3. Run the queriesForProj.sql script to run the queries written for the database
